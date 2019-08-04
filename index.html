@@ -1,46 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
 
 <head>
+
   <meta charset="UTF-8">
-  <title>About</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Basic Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 
 <body>
-
-  <header id="main-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a href="index.html" id="myName">Tom Williams</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+   
+      <a class="navbar-brand" href="index.html" id="logo">Tom Williams</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+        </ul>
+      </div>
+   
     </div>
-  </header>
-
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
-
-      <img src="assets/images/picture.jpg" class="mypic" alt="Your Name">
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
-
-      <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
-
-      <p>Suspendisse dictum, arcu at quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
+ 
+  </nav>
+ 
+  <main class="container">
+    <section class="row">
+      <div class="col-md-8">
+        <article class="block">
+          <h1 class="block-header">About Me</h1>
+          <hr />
+          <img src="assets/images/My Pic.JPG" alt="" id="myPic" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+          <br />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.
+          </p>
+        </article>
+      </div>
     </section>
+  </main>
 
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright
+    </p>
   </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
